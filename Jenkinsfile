@@ -42,7 +42,7 @@ pipeline {
             steps {
                 echo 'PCF DEPLOYMENT'
 				pushToCloudFoundry(
-				  target: 'api.local.pcfdev.io',
+				  target: 'https://api.run.pivotal.io',
 				  organization: 'jbhemanadhuni.org',
 				  cloudSpace: 'development',
 				  credentialsId: 'PCF'
